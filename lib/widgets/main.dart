@@ -338,9 +338,13 @@ class ExpandWidgetExample extends StatelessWidget {
 }
 
 /**
+ * @Deprecated
  * Stack 위젯은, 자식 위젯들을 겹치도록 해줍니다.
  * 플러터의 그래픽 엔진인 스키아 엔진은 2D 엔진이기 때문에 겹친 '두께'를 표현하지는 못하는 한계가 존재합니다.
  * 위젯의 순서는 children에 입력한 위젯들 순서대로 화면에 그려집니다. 즉, 제일 위에 입력될수록 화면에서는 제일 아래에 존재하게 됩니다.
+ *
+ * + 2025.02.04 - 내용 수정)
+ * Flutter 3.10 부터 기존 Skia 엔진을 Impeller 엔진으로 대체합니다.
  */
 class StackWidgetExample extends StatelessWidget {
 
